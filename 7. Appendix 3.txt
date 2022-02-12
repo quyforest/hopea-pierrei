@@ -1,0 +1,280 @@
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("1.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(a)"*italic(" D. venosa"))
+
+g1<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'), limits=c(0.5,1.5))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_text(size=13),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g1
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("2.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(b)"*italic(" S. cuminii"))
+
+g2<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'), limits=c(0,1.5))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g2
+
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("3.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(c)"*italic(" M. ligustrinum"))
+
+g3<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.', limits=c(0.3,1.5)))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g3
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("4.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(d)"*italic(" S. roxburghii"))
+
+g4<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.', limits=c(0,1.5)))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_text(size=13),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g4
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("5.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(e)"*italic(" G. delpyana"))
+
+g5<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.', limits=c(0.5,2)))+xlim(0,30.5)+ylim(0.4,1.6)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g5
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("6.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(f)"*italic(" O. dioica"))
+
+g6<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g6
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("7.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(g)"*italic(" G. vilersiana"))
+
+g7<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+labs(x="Scale r (m)")+
+labs(title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'))+xlim(0,30.5)+ylim(0,2)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_text(size=13),
+        axis.title.y =element_text(size=13),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g7
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("8.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(h)"*italic(" C. parthenoxylum"))
+
+g8<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+labs(x="Scale r (m)")+
+labs(title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'))+xlim(0,30.5)+ylim(0,2)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_text(size=13),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g8
+
+
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("9.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-expression("(i)"*italic(" D. sylvatica"))
+
+g9<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+labs(x="Scale r (m)")+
+labs(title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'))+xlim(0,30.5)+ylim(0,2)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_text(size=13),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10.5))+
+  ylab(expression(paste(g[12](r))))
+g9
+
+
+#########################################
+
+
+library("gridExtra")
+par(mar = c(2, 2, 2, 2))
+grid.arrange(g1, g2, g3, g4, g5, g6, g7,
+g8, g9,ncol=3, nrow =3, heights=c(1,1,1.1), widths=c(1.1,1,1))
+

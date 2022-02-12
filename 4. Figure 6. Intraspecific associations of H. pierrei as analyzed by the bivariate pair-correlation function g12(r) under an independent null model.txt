@@ -1,0 +1,287 @@
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/Cung loai o1")
+library("readxl")
+data<-read.table("1.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(a) Adults vs. subadults"
+
+g1<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'), limits=c(0,2))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_text(size=13),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+
+g1
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/Cung loai o1")
+library("readxl")
+data<-read.table("2.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(b) Adults vs. juveniles"
+
+g2<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'), limits=c(0.5,2))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+g2
+
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/otc1")
+library("readxl")
+data<-read.table("3.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(c) Subadults vs. juveniles"
+
+g3<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+annotate(geom="text", x=0.4, y=1.6, label="", color="black", size=5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.', limits=c(0.6,1.6)))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+g3
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/Cung loai o2")
+library("readxl")
+data<-read.table("1.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(d) Adults vs. subadults"
+
+g4<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+annotate(geom="text", x=0, y=5, label="", color="black", size=5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.', limits=c(0,6)))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_text(size=13),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+g4
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/Cung loai o2")
+library("readxl")
+data<-read.table("2.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(e) Adults vs. juveniles"
+
+g5<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.', limits=c(0,3)))+xlim(0,30.5)+
+annotate(geom="text", x=0, y=3, label="", color="black", size=5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+g5
+
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/Cung loai o2")
+library("readxl")
+data<-read.table("3.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(f) Subadults vs. juveniles"
+
+g6<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+
+labs(x="", title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+annotate(geom="text", x=0, y=4, label="", color="black", size=5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_blank(),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+g6
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/Cung loai o3")
+library("readxl")
+data<-read.table("1.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(g) Adults vs. subadults"
+
+g7<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+labs(x="Scale r (m)")+
+labs(title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+annotate(geom="text", x=0, y=3, label="", color="black", size=5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_text(size=13),
+        axis.title.y =element_text(size=13),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+g7
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/Cung loai o3")
+library("readxl")
+data<-read.table("2.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(h) Adults vs. juveniles"
+
+g8<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+labs(x="Scale r (m)")+
+labs(title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.'))+xlim(0,30.5)+
+annotate(geom="text", x=0, y=2.5, label="", color="black", size=5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_text(size=13),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+g8
+
+#########################################
+
+setwd ("C:/Users/XIAORUAN/Desktop/So lieu Phu Quoc/Cung loai o3")
+library("readxl")
+data<-read.table("3.res", header=TRUE)
+
+
+library("ggplot2")
+library(scales)
+v1 <-"(i) Subadults vs. juveniles"
+
+g9<-ggplot(data, aes(x=Distance , y = E12..1)) +
+  geom_ribbon(aes(ymin = E12., ymax = E12..1), fill = "gray77",alpha =0.7)+geom_line(aes(y = g12.r.), color="black", size = 0.7)+labs(x="Scale r (m)")+
+labs(title = v1)+
+  geom_hline(yintercept=1, linetype="dashed", 
+             color = "red", size=0.5)+
+annotate(geom="text", x=0, y=2.5, label="", color="black", size=5)+
+scale_y_continuous(
+  labels = scales::number_format(accuracy = 0.1,
+                                 decimal.mark = '.', limits=c(0,2.5)))+xlim(0,30.5)+
+  theme_classic() +
+  theme(panel.border = element_rect(colour = "black", fill=NA), text=element_text(size=13),axis.text = element_text(size = 12, colour="black"),
+        axis.text.x = element_text(color="black", size=11),
+        axis.text.y = element_text(color="black", size=10),
+        axis.title.x =element_text(size=13),
+        axis.title.y =element_blank(),
+        axis.title =element_text(size=12.5),
+        plot.title = element_text(color="black", size=10))+
+  ylab(expression(paste(g[12](r)))) 
+g9
+
+
+#########################################
+
+
+library("gridExtra")
+par(mar = c(2, 2, 2, 2))
+grid.arrange(g1, g2, g3, g4, g5, g6, g7,
+g8, g9,ncol=3, nrow =3, heights=c(1,1,1.1), widths=c(1.1,1,1))
+
