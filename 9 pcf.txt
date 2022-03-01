@@ -1,6 +1,0 @@
-
-library(spatstat)
-H.pierrei <- subset(data, Species=="H.pierrei")
-A<-ppp(H.pierrei $x, H.pierrei$y, c(0,100), c(0,100), unitname="m")
-A <- envelope(X, pcf, nsim = 999, rank = 1, correction = "translate", global = FALSE)
-plot(A)
